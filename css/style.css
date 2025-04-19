@@ -2,6 +2,14 @@
     --base-font-family: "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif
 }
 
+/* body {
+    background:url(/intro/page-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+    background-size: cover;
+    background-position:50% 50%;
+} */
+
 @font-face {
     font-family: "iconfont-archer";
     src: url("//at.alicdn.com/t/font_327081_s1wbjxwfu9c.eot");
@@ -287,8 +295,40 @@ body {
     width: 100%;
     transition: all .5s ease-out;
     opacity: 1;
-    transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0);
 }
+
+
+/* .container {
+    display: flex;
+    padding: 3rem 0 0 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    transition: all .5s ease-out;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    background: url(/intro/post-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* 添加半透明黑色覆盖层，使背景图片变暗 */
+/* .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
+}  */
 
 .container-unloaded {
     opacity: 0;
@@ -2648,7 +2688,10 @@ html::-webkit-scrollbar-track:hover,
 
 .post-body main,
 .about-body main {
-    margin: 0
+    margin: 0;
+    /* background:url(/intro/post-bg.jpg);
+    background-color: #0077b5; */
+    
 }
 
 .anchorjs-archer {
@@ -2918,6 +2961,13 @@ html::-webkit-scrollbar-track:hover,
     transition: background-color .5s ease-out;
     overflow: hidden
 }
+/* .article-entry {
+    background: transparent;
+    border-radius: .5rem .5rem 0 0;
+    padding: 2rem 1.5rem;
+    transition: background-color .5s ease-out;
+    overflow: hidden;
+} */
 
 .article-entry :first-child {
     margin-top: 0
